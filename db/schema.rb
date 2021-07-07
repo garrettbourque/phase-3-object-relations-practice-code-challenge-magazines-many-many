@@ -21,4 +21,10 @@ ActiveRecord::Schema.define(version: 2021_07_07_201416) do
     t.string "email"
   end
 
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer "reader_id"
+    t.integer "magazine_id"
+    t.integer "price"
+  end
+
 end
