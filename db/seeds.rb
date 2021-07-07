@@ -15,19 +15,21 @@ puts "Seeding readers..."
   Reader.create(name: Faker::Name.name, email: Faker::Internet.email)
 end
 
-puts "Seeding subscriptions..."
+#puts "Seeding subscriptions..."
 # Create 20 random subscriptions
-20.times do
+#20.times do
   # Get a reader instance:
-  reader_id = Reader.ids.sample
+  #reader_id = Reader.ids.sample
   # Get a magazine instance:
-  magazine_id = Magazine.ids.sample
+  #magazine_id = Magazine.ids.sample
   # Get a random price between 10 and 100:
-  price = rand(10..100)
+ # price = rand(10..100)
 
   # TODO: create subscriptions! Remember, a subscription belongs to a reader
   # and a subscription belongs to a magazine.
   
-end
+#end
+
+
 
 puts "Done!"
