@@ -24,8 +24,6 @@ puts "Seeding subscriptions..."
   reader_id = Reader.ids.sample
   # Get a magazine instance:
   magazine_id = Magazine.ids.sample
-  puts magazine_id
-  puts reader_id
   # Get a random price between 10 and 100:
   price = rand(10..100)
   # TODO: create subscriptions! Remember, a subscription belongs to a reader
